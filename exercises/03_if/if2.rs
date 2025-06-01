@@ -3,11 +3,15 @@ fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
     } else {
-        1
+        "str here"
     }
 }
 
 fn main() {
+    let str = String::from("strawberry");
+    let strawberry = picky_eater(&str);
+    println!("{}", strawberry);
+
     // You can optionally experiment here.
 }
 
